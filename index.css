@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f7f7fa;
+  min-height: 100vh;
+  position: relative;
+}
+
+.pink-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  overflow: hidden;
+}
+.pink-shape1 {
+  position: absolute;
+  top: -80px;
+  right: -120px;
+  width: 320px;
+  height: 320px;
+  background: #ff4da6;
+  border-radius: 50%;
+  opacity: 0.18;
+}
+.pink-shape2 {
+  position: absolute;
+  bottom: -100px;
+  left: -120px;
+  width: 400px;
+  height: 400px;
+  background: #ff4da6;
+  border-radius: 50%;
+  opacity: 0.22;
+}
+.pink-shape3 {
+  position: absolute;
+  top: 60px;
+  left: 60px;
+  width: 120px;
+  height: 120px;
+  background: #ff4da6;
+  border-radius: 50%;
+  opacity: 0.12;
+}
+
+.login-box {
+  position: relative;
+  z-index: 1;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(255,77,166,0.10);
+  width: 400px;
+  margin: 80px auto 0 auto;
+  padding: 48px 36px 36px 36px;
+  text-align: center;
+  border: none;
+}
+.login-box h2 {
+  color: #222;
+  margin-bottom: 8px;
+  font-size: 2.2em;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.login-box .subtitle {
+  color: #555;
+  margin-bottom: 28px;
+  font-size: 1.1em;
+}
+.login-box input[type="text"],
+.login-box input[type="password"] {
+  width: 100%;
+  padding: 14px;
+  margin: 12px 0;
+  border-radius: 8px;
+  border: 1.5px solid #ff4da6;
+  background: #f8f8fa;
+  color: #222;
+  font-size: 17px;
+  transition: border 0.2s;
+}
+.login-box input:focus {
+  border: 1.5px solid #ff4da6;
+  outline: none;
+}
+.login-box .form-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 0 8px 0;
+  font-size: 15px;
+  color: #555;
+}
+.login-box label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 15px;
+}
+.login-box input[type="checkbox"] {
+  accent-color: #ff4da6;
+  width: 18px;
+  height: 18px;
+}
+.forgot-link {
+  font-size: 15px;
+  color: #ff4da6;
+  text-decoration: underline;
+  cursor: pointer;
+  margin-left: 18px;
+}
+.login-box button {
+  width: 100%;
+  padding: 16px;
+  border-radius: 8px;
+  border: none;
+  background: #222;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  margin-top: 28px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  box-shadow: 0 2px 8px rgba(255,77,166,0.10);
+}
+.login-box button:hover {
+  background: #ff4da6;
+  color: #fff;
+}
+#errorMsg {
+  color: #ef4444;
+  margin-top: 12px;
+  font-weight: 600;
+}
+

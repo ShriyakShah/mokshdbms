@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MokshDBMS Home</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <div class="top-bar">
+    <div class="logo">Moksh DBMS</div>
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Search...">
+      <button id="searchBtn">Search</button>
+    </div>
+    <div class="account-container">
+      <button id="accountBtn">Account</button>
+      <button id="signoutBtn">Sign Out</button>
+    </div>
+  </div>
+  <div class="tables-bar">
+    <div class="tables-list" id="tablesList"></div>
+    <div class="table-heading" id="tableHeading"></div>
+    <button id="addNewBtn" style="display:none;">Add New</button>
+  </div>
+  <div class="table-container" id="tableContainer"></div>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js/dist/umd/supabase.min.js"></script>
+  <script src="assets/home.js"></script>
+</body>
+</html>
